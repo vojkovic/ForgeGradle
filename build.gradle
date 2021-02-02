@@ -21,8 +21,8 @@ group = 'net.minecraftforge.gradle'
 version = '2.1-SNAPSHOT'
 //version = '2.1.1'
 archivesBaseName = 'ForgeGradle'
-targetCompatibility = '1.6'
-sourceCompatibility = '1.6'
+targetCompatibility = '1.8'
+sourceCompatibility = '1.8'
 
 repositories {
     mavenLocal()
@@ -93,10 +93,6 @@ dependencies {
     compileOnly "net.minecraft:launchwrapper:1.11"
 
     testCompile 'junit:junit:4.12'
-}
-
-task wrapper(type: Wrapper) {
-    gradleVersion = '2.14'
 }
 
 sourceSets {

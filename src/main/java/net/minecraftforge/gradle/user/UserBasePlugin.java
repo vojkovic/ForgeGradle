@@ -528,8 +528,8 @@ public abstract class UserBasePlugin<T extends UserBaseExtension> extends BasePl
         project.getDependencies().add(JavaPlugin.COMPILE_CONFIGURATION_NAME, project.fileTree("libs"));
 
         // set the compile target
-        javaConv.setSourceCompatibility("1.6");
-        javaConv.setTargetCompatibility("1.6");
+        javaConv.setSourceCompatibility("1.8");
+        javaConv.setTargetCompatibility("1.8");
     }
 
     /**
