@@ -12,7 +12,6 @@ buildscript {
 
 apply plugin: 'java'
 apply plugin: 'idea'
-apply plugin: 'eclipse'
 apply plugin: 'maven'
 apply plugin: "com.gradle.plugin-publish"
 apply plugin: 'license'
@@ -29,11 +28,6 @@ repositories {
     maven {
         name = "forge"
         url = "https://files.minecraftforge.net/maven"
-    }
-    maven {
-        // because Srg2Source needs an eclipse dependency.
-        name = "eclipse"
-        url = "https://repo.eclipse.org/content/groups/eclipse/"
     }
     jcenter() // get as many deps from here as possible
     mavenCentral()
