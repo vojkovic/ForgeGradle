@@ -80,7 +80,18 @@ dependencies {
     // mcp stuff
     shade 'de.oceanlabs.mcp:RetroGuard:3.6.6'
     shade 'de.oceanlabs.mcp:mcinjector:3.4-SNAPSHOT'
-    shade 'net.minecraftforge.srg2source:Srg2Source:3.3-SNAPSHOT'
+    shade ('net.minecraftforge.srg2source:Srg2Source:3.3-SNAPSHOT') {
+        exclude module: 'org.eclipse.jdt.core'
+        exclude module: 'contenttype'
+        exclude module: 'jobs'
+        exclude module: 'resources'
+        exclude module: 'runtime'
+        exclude module: 'common'
+        exclude module: 'preferences'
+        exclude module: 'org.eclipse.jgit'
+        exclude module: 'org.eclipse.text'
+        exclude module: 'osgi'
+    }
 
     //Stuff used in the GradleStart classes
     compileOnly 'com.mojang:authlib:1.5.16'
