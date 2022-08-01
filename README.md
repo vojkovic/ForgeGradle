@@ -5,7 +5,7 @@ ForgeGradle
 
 Minecraft mod development framework used by Forge and FML for the gradle build system
 
-Asbyth, the original maintainer of this repository, has disappeared of the internet since mid 2022. 
+Asbyth, the original maintainer of this repository, has disappeared off the internet since mid 2022. 
 
 Some Documentation:
 https://web.archive.org/web/20220616044533/https://gist.github.com/asbyth/ba2cd9b66925f2437bbcfcd884d60af7
